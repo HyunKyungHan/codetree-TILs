@@ -9,9 +9,6 @@ def count_affordable(mat, budget):
 
 def discount(mat, budget):
     max_std = 0
-    cost = 0
-    for i in range(len(mat)):
-        cost += sum(mat[i])
     for i in range(len(mat)):
         mat[i][0] = mat[i][0]//2
         if count_affordable(mat, budget) > max_std:
@@ -23,5 +20,5 @@ if __name__ == '__main__':
     costs = []
     for i in range(s_num):
         costs.append(list(map(int, input().split())))
-    costs.sort()
+    costs.sort(key=sum)
     print(discount(costs, budget))
