@@ -1,5 +1,5 @@
 def alphabets():
-    alpha = 'ABCDEFGHIJKMNOPQRSTUVWXYZ'
+    alpha = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
     alpha_list = []
     for i in range(len(alpha)):
         alpha_list.append(alpha[i])  
